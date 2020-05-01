@@ -28,8 +28,11 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',
-      { extensions: ['.jsx', '.js']}
+      { extensions: ['.jsx', 'js']}
     ],
     'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': ['off'],
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-for":"off",
   },
 };
