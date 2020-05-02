@@ -50,6 +50,13 @@ export const Content = styled.div`
       }
     }
 
+    span {
+      color: #fb6f91;
+      align-self: flex-start;
+      font-weight: bold;
+      margin: 0 0 10px;
+    }
+
     a {
       color: #fff;
       margin-top: 15px;
