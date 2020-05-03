@@ -35,6 +35,7 @@ module.exports = {
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/label-has-for":"off",
     'no-console' : ["error", { allow: ["tron"] }],
+    "no-param-reassign": "off"
     // 'no-useless-return': ["error", {allowElseIf: true}],
   },
   settings: {
