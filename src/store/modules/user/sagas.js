@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { all, takeLatest, call, put } from 'redux-saga/effects';
 import { toast } from 'react-toastify';
 import api from '~/services/api';
@@ -6,11 +7,12 @@ import { updateProfileSuccess, updateProfileFailure } from './actions';
 
 export function* updateProfile({ payload }) {
   try {
-    const { name, email, ...rest } = payload.data;
+    const { name, email, avatar_id, ...rest } = payload.data;
 
     const profile = {
       name,
       email,
+      avatar_id,
       ...(rest.oldPassword ? rest : {}),
     };
 
